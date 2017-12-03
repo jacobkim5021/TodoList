@@ -1,0 +1,106 @@
+body {
+	background-color: #232323;
+	font-family: 'Barlow Semi Condensed', sans-serif;
+	margin: 0;
+}
+
+#navbar {
+	background-color: white;
+	height: 30px;
+	text-align: center;
+}
+
+#message {
+	display: inline-block;
+	width: 20%;
+}
+
+#container {
+	background-color: #f7f7f7;
+	width: 375px;
+	margin: 20px auto;
+	box-shadow: 0 0 7px rgba(255, 255, 255, 0.5);
+
+}
+
+input {
+	font-size: 18px;
+	font-family: Barlow Semi Condensed;
+	background-color: #f7f7f7;
+	width: 100%;
+	padding: 13px 13px 13px 20px;
+	box-sizing: border-box;
+	border: 3px solid rgba(0, 0, 0, 0);
+}
+
+input:focus {
+	outline: none;
+}
+
+ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+li {
+	background-color: white;
+	height: 40px;
+	line-height: 40px;
+}
+
+li:nth-child(2n) {
+	background-color: #f7f7f7;
+}
+
+#delete{
+	border: none;
+	background: none;
+	height: 100%;
+	/*font-weight: 500;*/
+	color: Red;
+	font-size: inherit;
+	transition: all 0.2s;
+	-webkit-transition: background 0.2s;
+	-moz-transition: background 0.2s;
+	outline: none;
+	float: right;
+	font-family: Barlow Semi Condensed;
+	margin-right: 30%;
+}
+
+h1, h2{
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: normal;
+	background-color: BurlyWood;
+	margin: 0;
+	color: white;
+}
+
+.completed {
+	color: gray;
+	text-decoration: line-through;
+}
+
+#delete:hover{
+	color: white;
+	background-color: Red;
+}
+
+span {
+	background-color: #e74c3c;
+	height: 40px;
+	margin-right: 20px;
+	text-align: center;
+	color: white;
+	width: 0px;
+	opacity: 0;
+	display: inline-block;
+	transition: 0.2s linear;
+}
+
+li:hover span{
+	width: 40px;
+	opacity: 1.0;
+}
